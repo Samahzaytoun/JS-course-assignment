@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Javascript 1 Course Assignment</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+   <section id="home">
+      <div id="nav">
+         <ul>
+            <li>
+               <button>Home</button>
+            </li>
+            <li>
+               <button id="contact">Contact</button>
+            </li>
+         </ul>
+      </div>
+
+      <h1>Dogs info</h1>
+      <div id="all">
+         <div id="dog1"> </div>
+         <div id="dog2"> </div>
+         <div id="dog3">
+         </div>
+      </div>
+   </section>
+
+   <section id="cont">
+      <button id="Exitbtn">X</button>
+      <h1>Contact form</h1>
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Name <span class="required">*</span>
+                  </label>
+             
+                  <input type="text" name="name" class="long" />
+                  <span class="error" id="errorname"></span>
+               
+                  <label>
+                     Email <span class="required">*</span>
+                  </label>
+              
+                  <input name="email" minlength="10" class="long" />
+                  <span class="error" id="erroremail"></span>
+                  <label>
+                     Subject <span class="required">*</span>
+                  </label>
+                  <input name="subject" class="long field-textarea" minlength="25"></input>
+                  <span class="error" id="errorsubj"></span>
+                  
+                  <input type="submit" value="Send">
+                  
+         </table>
+      </form>
+   </section>
+   <section id="img1">
+      <button id="img1ext">X</button>
+      <h1>Details</h1>
+      <pre>
+Type : Dog
+
+Gender : Male
+
+Price : 100$
+
+Color : Black
+
+Place : Zoo
+        </pre>
+   </section>
+</main>
+   <script src="script.js"></script>
+</body>
+
+</html>
